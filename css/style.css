@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700,900');
+
+body{
+  width: 100%;
+  background-color: #262851;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  overflow: hidden;
+}
+ .navbar{
+   padding: 40px 0px;
+   position: relative;
+ }
+ a.navbar-brand{
+   font-size: 25px;
+   font-weight: 600;
+   text-transform: lowercase;
+   color: #ffffff;
+ }
+
+ nav.navbar ul.navi-links{
+   display: flex;
+   justify-content: center;
+   text-transform: capitalize;
+   font-size: .8rem;
+   margin: 0 10px;
+ }
+
+ nav.navbar ul.navi-links li{
+   margin: 0 10px;
+ }
+ nav.navbar ul.navi-links a:hover:after{
+   content: "";
+   height: 6px;
+   width: 6px;
+   position: absolute;
+   margin-left: 3px;
+   border-radius: 50%;
+   background: #d71758;
+ }
+
+ .navbar ul.social-icons li{
+   margin-left: 25px;
+ }
+
+ .navbar ul.social-icons li a{
+  color: #ffffff;
+  font-size: 15px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4d4c68;
+  border: 1px solid #4d4c68;
+ }
+
+
+ .navbar ul.social-icons li a:hover{
+  color: #d71758;
+  background-color: #fff;
+  border: 1px solid #fff;
+ }
+
+
+ .navbar ul.social-icons li:nth-child(1) a:hover{
+  color: #221970;
+ }
+
+ .navbar ul.social-icons li:nth-child(2) a:hover{
+  color: #00a8f3;
+ }
+
+ .navbar ul.social-icons li:nth-child(3) a:hover{
+  color: #d71758;
+ }
+
+ .whole-car-view{
+   position: relative;
+ }
+
+.year{
+  font-weight: 600;
+  font-size: 40rem;
+  color: #22234a;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  width: 100vw;
+  max-width: 100%;
+  transform: translate(-50%, -50%);
+  line-height: 500px;
+  padding: 0;
+  overflow: hidden;
+  z-index: -1;
+} 
+
+section.whole-car-view .car-details{
+  position: relative;
+  left: 40px;
+}
+
+section.whole-car-view .car-details h1.car-name{
+  font-size: 45px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  line-height: 75px;
+  color: #d71758;
+}
+
+section.whole-car-view .car-details h1.car-name span{
+  font-size: 70px;
+  color: #fff;
+}
+
+section.whole-car-view .car-details p.about-car{
+  font-size: 14px;
+  width: 70%;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+section.whole-car-view .car-details h4.production-year{
+  font-size: 16px;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 20px;
+}
+
+section.whole-car-view .car-details h4.production-year span{
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #fff;
+}
+
+section.whole-car-view .car-details a.btn-discover{
+  background-color: #d71758;
+  border: 2px solid #fea500;
+  padding: 10px 10px 10px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 5px;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+}
+
+section.whole-car-view .car-details a.btn-discover span{
+  padding-right: 5px;
+  position: relative;
+}
+
+section.whole-car-view .car-details a.btn-discover i{
+  position: relative;
+}
+
+section.whole-car-view .car-details a.btn-discover:after{
+  content: "";
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.20);
+  border: 2px solid #fff;
+}
+
+section.whole-car-view .car-details a.btn-discover:hover span{
+  animation-name: anim-btn-discover-text;
+  animation-duration: 250ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+section.whole-car-view .car-details a.btn-discover:hover .btn-icon {
+  animation-name: anim-btn-discover-icon;
+  animation-duration: 250ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+section.whole-car-view .car-details a.btn-discover:hover:after {
+  animation-name: anim-btn-discover-after;
+  animation-duration: 250ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes anim-btn-discover-text{
+  0% {left: 0px;}
+  100%{left: 10px;}
+}
+
+@keyframes anim-btn-discover-icon{
+  0%{left: 0px;}
+  100%{left: 24px;
+    transform: scale(2, 2);
+    color: #d71758;
+    padding-left: 20px;
+  
+  }
+}
+
+@keyframes anim-btn-discover-after {
+  0% {background-color: rgba(255, 255, 255, 0.20);}
+  100%{background-color: #fff;}
+}
+
+
+section.whole-car-view .car-pic{
+  position: relative;
+  z-index: 3;
+  width: 550px;
+  left: 150px; top: 40px;
+}
+
+section.whole-car-view .car-pic img{
+  max-width: 500px;
+}
+
+section.whole-car-view .navigate{
+  position: relative;
+  z-index: 3;
+  display: inline-flex;
+  float: right;
+  margin-left: -100px;
+}
+
+section.whole-car-view .navigate button{
+  color: #fff;
+  height: 50px; width: 50px;
+  border-radius: 50%;
+  background-color: #4b4c68;
+  border: 1px solid #4b4c68;
+  cursor: pointer;
+  transition: all 250ms ease-in-out;
+  margin: 10px;
+}
+
+section.whole-car-view .navigate button:hover{
+  color: #d71758;
+  background-color: #fff;
+  border: 1px solid #4b4c68;
+}
+
+section.whole-car-view .navigate .swiper-button-next,
+.swiper-button-prev{
+  background-image: none;
+  position: static;
+}
+
+.stripe{
+  height: 60px;
+  position: absolute;
+  background-color: #fea500;
+  bottom: 200px;
+  left: 0;
+  z-index: -1;
+
+}
+
+.one{
+  width: 120%;
+  transform: rotate(155deg);
+}
+
+.two{
+  width: 145%;
+  transform: rotate(155deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---Media Queries --*/
+@media (max-width: 1080px) {
+
+  body{
+    overflow: hidden;
+  }
+  .year{
+    opacity: 0;
+  }
+
+  section.whole-car-view .car-pic{
+    width: 100vw;
+    left: 0px; top: 40px;
+  }
+
+  section.whole-car-view .car-details h1.car-name{
+    font-size: 35px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    line-height: 45px;
+    color: #d71758;
+  }
+  
+  section.whole-car-view .car-details h1.car-name span{
+    font-size: 50px;
+    color: #fff;
+  }
+
+  section.whole-car-view .car-details a.btn-discover{
+    background-color: #d71758;
+    border: 1px solid #fea500;
+    padding: 5px 5px 5px 15px;
+    border-radius: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 5px;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .one{
+    width: 120%;
+    transform: rotate(155deg);
+  }
+  
+  .two{
+    width: 165%;
+    transform: rotate(155deg);
+  }
+
+  
+
+  
+
+
+
+
+
+
+
+  }
+@media (max-width: 992px) {
+
+  body{
+    overflow: visible;
+    overflow-x: hidden;
+  }
+
+  .stripe, 
+  .year{
+    opacity: 0;
+  }
+
+  section.whole-car-view .car-pic{
+    width: 100vw;
+    left: 0px; top: 40px;
+  }
+
+  .navbar ul.social-icons li{
+    margin-left: 10px;
+    margin-right: 0px;
+    margin-top: 10px;
+  }
+
+  section.whole-car-view{
+    text-align: center;
+  }
+
+  section.whole-car-view .car-details{
+    position: relative;
+    left: 0px; right: 40px;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    justify-content: center;
+  }
+
+  section.whole-car-view .car-details p.about-car{
+    font-size: 14px;
+    width: 100%;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+
+
+  section.whole-car-view .navigate{
+    margin-left: 0px;
+    position: none;
+    float: none;
+    text-align: center;
+    justify-content: center;
+  }
+  
+
+  
+
+  
+
+
+
+
+
+
+
+  }
+@media (max-width: 768px) {
+  
+}
+@media (max-width: 576px) {
+
+  body{
+    overflow: visible;
+    overflow-x: hidden;
+  }
+
+  section.whole-car-view .car-pic img{
+    max-width: 85vw;
+  }
+
+  section.whole-car-view .navigate{
+    float: none;
+    margin-left: 0px;
+  }
+
+  
+  
+}
+
+
+
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+
+
+
+
+
+
+
