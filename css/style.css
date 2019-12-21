@@ -247,6 +247,15 @@ section.whole-car-view .navigate button:hover{
   border: 1px solid #4b4c68;
 }
 
+section.whole-car-view .navigate 
+button:focus,
+button:active,
+button:hover{
+    outline: 0px !important;
+    box-shadow: none !important;
+}
+
+
 section.whole-car-view .navigate .swiper-button-next,
 .swiper-button-prev{
   background-image: none;
@@ -441,6 +450,7 @@ section.whole-car-view .navigate .swiper-button-next,
 
   section.whole-car-view .navigate{
     margin-left: 0px;
+    margin-top: 30px;
     position: none;
     float: none;
     text-align: center;
